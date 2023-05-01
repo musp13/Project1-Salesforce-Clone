@@ -1,0 +1,794 @@
+body
+{
+    font-family: monospace;
+    color: rgb(3,45,96);
+}
+header
+{
+    color: rgba(42, 30, 109, 0.897);
+}
+a
+{
+    text-decoration: none;
+    color: rgba(42, 30, 109, 0.897);
+}
+.navbar_container
+{
+    display: grid;
+    align-items: center;
+    grid-template-rows: 6;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    width: 100%;
+    padding-right: 30px;
+    /*grid-template-columns: 3;*/
+    /*justify-content: space-evenly;
+    flex-wrap: wrap;*/
+}
+.nav_item
+{
+
+}
+.test_border
+{
+    border: 2px solid;
+    border-color: rgba(128, 128, 128, 0.397);
+    
+}
+#logo
+{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    height: 7ex;
+}
+.menu
+{
+    display: flex;
+    column-gap: 10px;
+    justify-content: space-between;
+    grid-column-start:2 ;
+    grid-column-end: 3;
+    color: rgba(42, 30, 109, 0.897);
+    font-family: monospace;
+    font-size: 15px;
+    font-weight: bold;
+}
+.menu-hover:hover
+{
+    color: rgb(0,161,224);
+}
+.right_items
+{
+    display: flex;
+    row-gap: 10px;
+    padding-right: 30px;
+    justify-content: space-around;
+    align-items: center;
+    grid-column-start: 6;
+    grid-column-end: 7;
+}
+#contact-us-anchor-tag:hover
+{
+    color: rgb(3,141,204);
+}
+#search_icon
+{
+    border-radius: 8px;
+}
+
+#right_item2
+{
+    height: 20px;
+    border-radius:8px;
+}
+#right_item2:hover
+{
+    box-shadow: 1px 1px 8px 1px #8888884f;
+}
+#right_item3
+{
+    height: 20px;
+    width: 20px;
+    background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Blue_globe_icon.svg/1000px-Blue_globe_icon.svg.png");
+    border-radius: 50px;
+}
+#right_item3:hover
+{
+    background-color: rgb(223,242,254);
+}
+#right_item4
+{
+    width: 70px;
+    height: 40px;
+}
+#right_item5
+{
+    height: 40px;
+    width: 120px;
+    font-weight: bolder;
+}
+#search_icon
+{
+    color: rgba(42, 30, 109, 0.897);
+}
+#login_icon
+{
+    font-family: monospace;
+    font-size: 16px;
+    border-radius: 20px; /*38%;*/
+    border: none;
+    color: rgb(3,45,96);
+    background-color: white;
+    width: 70px;
+    height: 40px;
+    transition-duration: 0.4s;
+}
+#login_icon:hover
+{
+    background-color: rgba(173, 216, 230, 0.185);
+    color: blue;
+}
+#free_button
+{
+    background-color: rgb(46,132,74);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 120px;
+    font-weight: bold;
+    transition-duration: 0.4s;
+}
+#free_button:hover
+{
+    background-color: black;
+}
+.welcome_container
+{
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 5;
+    height: 38vw;
+    background: url("https://wp.salesforce.com/en-in/wp-content/uploads/sites/21/2023/04/php-marqee-ai-data-crm-lg-bg.jpg?resize=1536,480")green;
+    width: 98vw;
+}
+#welcome_text
+{
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+#welcome_image
+{
+    padding-top: 134px;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    align-self: baseline;
+}
+#welcome_text_bold
+{
+    padding-top: 160px;
+    padding-left: 50px;
+    padding-right:50px ;
+    font-size: 30px;
+    text-decoration: solid;
+}
+#welcome_description
+{
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: large;
+}
+#welcome_buttons
+{
+    padding-left: 50px;
+    padding-top: 1rem;
+}
+#welcome_button1
+{
+    border: none;
+    height: 40px;
+    width: 150px;
+    background-color: rgb(1,118,211);
+    color: white;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+}
+#welcome_button1:hover
+{
+    background-color: rgb(2,44,95);
+}
+#welcome_button2
+{
+    border-color: rgb(1,118,211);
+    color: rgb(1,118,211);
+    background-color: white;
+    border-radius: 4px;
+    height: 40px;
+    width: 150px;
+    transition-duration: 0.1s;
+}
+#welcome_button2:hover
+{
+    background-color: rgb(217,237,255);
+    border-color: black;
+    color: black;
+}
+#services
+{
+    padding-top:40vh;
+    display: grid;
+   /* */
+}
+#servce-intro
+{
+    grid-row-start: 1;
+    grid-row-end: 1;
+    height: 10vh;
+    justify-self: center;
+    font-size: 30px;
+    font-weight: bolder;
+}
+#service-items
+{
+    display: grid;
+    grid-template-rows: 50px 30px;
+    grid-template-columns: 40px 40px 40x 40px;
+    height: 100vh;
+    background: url("https://wp.salesforce.com/en-in/wp-content/uploads/sites/21/2023/03/pb-hp-products-bg.png?resize=1536,469");
+}
+#service-items-row1
+{
+    display: flex;
+    justify-content: space-around;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+.service-item
+{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1px;
+    height: 300px;
+    width: 250px;
+    /*border:2px solid rgba(128, 128, 128, 0.404);*/
+    border-radius: 13px;
+    box-shadow: 5px 5px 5px 5px #88888833;
+}
+#service-item1
+{
+    
+    
+}
+#service-item1-background
+{
+    background: url("https://wp.salesforce.com/en-in/wp-content/uploads/sites/21/2023/03/pb-hp-product-smb_icon-1.jpg?resize=768,433");
+    background-size: 270px;
+    height: 150px;
+    border-radius: 10px;
+    
+}
+#service-item1-heading
+{
+    padding-left: 20px;
+    justify-self: center;
+    background-color: white;
+}
+#service-item2-background
+{
+    background: url("https://wp.salesforce.com/en-in/wp-content/uploads/sites/21/2023/03/pb-hp-product-smb_icon-2.jpg?resize=768,433");
+    background-size: 270px;
+    height: 150px;
+    border-radius: 10px;
+    
+}
+#service-item3-background
+{
+    background: url("https://wp.salesforce.com/en-in/wp-content/uploads/sites/21/2023/03/pb-hp-product-smb_icon-3.jpg?resize=768,433");
+    background-size: 270px;
+    height: 150px;
+    border-radius: 10px;
+    
+}
+#service-item4-background
+{
+    background: url("https://wp.salesforce.com/en-in/wp-content/uploads/sites/21/2023/03/pb-hp-product-smb_icon-4.jpg?resize=768,433");
+    background-size: 270px;
+    height: 150px;
+    border-radius: 10px;
+    
+}
+
+#service-items-row2
+{
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    grid-row-start: 4;
+    grid-row-end: 4; 
+    /*height: 13px;*/
+}
+#service-button
+{
+    height: 50px;
+    width: 200px;
+    border-color: rgb(1,118,211);
+    color: rgb(1,118,211);
+    background-color: white;
+    border-radius: 5px;
+    transition-duration: 0.1s;
+}
+#service-button:hover
+{
+    border-color: black;
+    color: black;
+    background-color: rgb(240,248,255);
+}
+#customer-into
+{
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+#customer-into-heading
+{
+    font-size: 40px;
+    font-weight: bolder;
+}
+#customer-into-description
+{
+    padding-top: 25px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 17px;
+}
+#customer-buttons
+{
+    padding-top: 50px;
+    justify-self: center;
+}
+.customer-button-class
+{
+    height: 50px;
+    width: 200px;
+    border-radius: 5px;
+    transition-duration: 0.1s;
+}
+#customer-button1
+{
+    background-color: rgb(1,118,211);
+    color: white;
+    border: none;
+}
+#customer-button1:hover
+{
+    background-color: rgb(3,45,96);
+}
+#customer-button2
+{
+    margin-left: 15px;
+    color: rgb(1,118,211);
+    border-color: rgb(1,118,211);
+    background-color: white;
+}
+#customer-button2:hover
+{
+    background-color: rgb(240,248,255);
+    border-color: black;
+    color: black;
+}
+#customer-promo
+{
+    display: grid;
+    padding-top: 100px;
+    height: 50vh;
+    justify-content: center;
+    grid-template-rows: 2;
+}
+#customer-promo-description
+{
+    justify-self: center;
+    font-size: 30px;
+    font-weight: bolder;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+#customer-promo-button-div
+{
+    padding-top: 1px;
+    justify-self: center;
+}
+#customer-promo-button
+{
+    height: 50px;
+    width: 200px;
+    border-radius: 5px;
+    transition-duration: 0.1s;
+    color: rgb(1,118,211);
+    border-color: rgb(1,118,211);
+    background-color: white;
+}
+#customer-promo-button:hover
+{
+    background-color: rgb(240,248,255);
+    border-color: black;
+    color: black;
+}
+#customer-brick
+{
+    display: grid;
+}
+#customer-brick-row1
+{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.customer-brick-item
+{
+    /*border: solid gray;*/
+    height: 70px;
+    width: 150px;
+    border-radius: 7px;
+    align-items: center;
+    box-shadow: 1px 1px 8px 1px #8888884f;
+}
+.brick-item-img
+{
+    height: 40px;
+    padding-top: 15px;
+}
+#customer-brick-row2
+{
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+#customer-brick-image
+{
+    display: grid; 
+    height: 40vh;
+    background: url("https://wp.salesforce.com/en-in/wp-content/uploads/sites/21/2023/03/pb-hp-logos-bg-2.png?resize=1536,310");
+    background-size: 215vh ;
+    background-blend-mode: overlay;
+}
+#trial-ad
+{
+    display: grid;
+    height: 100vh;
+    width: 97.1vw;
+    justify-content: center;
+    align-items: center;
+}
+#trial-ad-box
+{
+    display: grid;
+    grid-template-columns: 2;
+    height: 80vh;
+    width: 80vw;
+    border-radius: 15px;
+    box-shadow: 1px 1px 8px 1px #8888884f;
+}
+#trial-ad-textarea
+{
+    padding-left: 50px;
+    
+    grid-column-start: 1;
+    grid-column-end: 1;
+    align-self: center;
+    justify-self: center;
+}
+#trial-ad-textarea-text
+{
+    font-weight: bolder;
+    font-size: 24px;
+}
+#trial-ad-textarea-button1-div
+{
+    padding-top: 80px;
+}
+#trial-ad-textarea-button2-div
+{
+    padding-top: 30px;
+}
+.trial-ad-textarea-button
+{
+    width: 500px;
+    height: 45px;
+    border-radius: 4px;
+}
+#trial-ad-textarea-button1
+{
+    border: none;
+    background-color: rgb(1,118,211);
+    color: white;
+}
+#trial-ad-textarea-button1:hover
+{
+    background-color: rgb(3,45,96);
+}
+#trial-ad-textarea-button2
+{
+    border-color: rgb(1,118,211);
+    background-color: white;
+    color: rgb(1,118,211);
+}
+#trial-ad-textarea-button2:hover
+{
+    background-color: rgb(240,248,255);
+    border-color: black;
+    color: black;
+}
+#trial-ad-img
+{
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+#grow-business-heading
+{
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bolder;
+}
+#grow-business-blocks
+{
+    padding-top: 50px;
+    display: grid;
+    column-gap: 0px;
+    grid-template-columns: 10;
+}
+#grow-business-block1
+{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    
+}
+#grow-business-block2
+{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    
+}
+#grow-business-block3
+{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    
+}
+#grow-business-block4
+{
+    grid-column-start: 4;
+    grid-column-end: 4;
+    
+}
+.grow-business-block-img
+{
+    height: 250px;
+}
+.grow-business-block-text
+{
+    padding-top: 30px;
+    font-weight: bolder;
+    font-size: 15px;
+}
+.grow-business-block-text:hover
+{
+    color: rgb(1,118,211);
+}
+#fortune-heading
+{
+    padding-top: 100px;
+    padding-left: 180px;
+    padding-right: 170px;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bolder;
+}
+#fortune-blocks
+{
+    display: grid;
+    grid-template-columns: 3;
+    column-gap: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+#fortune-block1
+{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    justify-self: center ;
+}
+#fortune-block2
+{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    justify-self: center ;
+}
+#fortune-block3
+{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    justify-self: center ;
+}
+.fortune-block-img-div
+{
+    margin-top: 100px;
+    align-self: center;
+    justify-self: center;
+    background: url("https://wp.salesforce.com/en-in/wp-content/uploads/sites/21/2023/03/group-201168.png?resize=1024,683");
+
+    /*box-shadow: 1px 1px 8px 1px #8888884f;*/
+}
+.fortune-block-img
+{
+    height: 250px;
+    width: 320px;
+    border-radius: 10px;
+    
+}
+.fortune-text
+{
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 15px;
+}
+#questions
+{
+    
+    margin-top: 50px;
+    margin-left: 110px;
+    margin-right: 100px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1;
+    grid-template-rows: 3;
+    background: url("https://wp.salesforce.com/en-in/wp-content/uploads/sites/21/2023/04/pb-hp-footer-mid3-in.jpg?resize=1536,953");
+    background-size:1000px ;
+    border-radius: 15px;
+    height: 109vh;
+    width: 80vw;
+    box-shadow: 1px 1px 8px 1px #8888884f;
+    row-gap: 0.1px;
+}
+
+#questions-heading
+{
+    font-size: 30px;
+    font-weight: bolder; 
+    padding-left: 190px;
+    padding-right: 190px;
+    padding-top: 150px;
+}
+
+#question-text
+{
+    padding-top: 30px;
+    padding-left: 190px;
+    padding-right: 190px;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    font-size: 17px;
+}
+#question-buttons
+{
+    padding-top: 50px;
+}
+#question-button1
+{
+    height: 50px;
+    width: 150px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(1,118,211);
+    color: white;
+}
+#question-button1:hover
+{
+    background-color: rgb(3,45,96);
+}
+#questions-button2
+{
+    margin-left: 15px;
+    border: none;
+    background: none;
+    color: rgb(3,45,96);
+}
+#questions-button2:hover
+{
+    color: rgb(1,118,211);
+}
+#reference-container
+{
+    margin-left: 10px;
+    margin-top: 150px;
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: 350px 1fr 1fr 1fr;
+}
+#reference-icons
+{
+    grid-column: 1/2;
+}
+#reference-social-icons
+{
+    margin-top: 50px;
+    display: flex;
+    column-gap: 15px;
+}
+#reference-contact-info
+{
+    margin-top: 30px;
+    color: rgb(68,68,68);
+    font-weight: bolder;
+    font-size: 14px;
+}
+.reference-heading
+{
+    font-weight: bolder;
+    font-size: 16px;
+    color: black;
+}
+.reference-content
+{
+    margin-top: 35px;
+    color: rgb(74,115,182);
+}
+#footer-container
+{
+    margin-top: 65px;
+    display: grid;
+    background-color: rgb(3,46,97);
+    color: white;
+    grid-template-rows: 1;
+    grid-template-columns: 200px 1fr;
+    height: 120px;
+}
+#footer-button-div
+{
+    margin: 40px;
+    grid-row: 1/2;
+    grid-column-start:1 ;
+    grid-column-end: 1;
+    
+}
+#footer-button
+{
+    border-color: white;
+    color: white;
+    background-color:rgb(3,46,97) ;
+    height: 40px;
+    width: 150px;
+    border-radius: 5px;
+}
+#footer-button:hover
+{
+    background-color:rgba(5, 71, 153, 0.384) ;
+}
+#footer-texts
+{
+    font-size: 11px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+#footer-links
+{
+    margin-left: 0px;
+    margin-top: 30px;
+}
+.footer-link-class
+{
+    color: rgb(2,157,208);
+    text-decoration: underline;
+}
+.footer-link-class:hover
+{
+    color: white;
+}
